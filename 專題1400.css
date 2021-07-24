@@ -1,0 +1,14 @@
+@media (max-width:1401px){
+.news{
+  margin-top: 1000px;
+}
+.option-close{
+  position: absolute;
+  left: 75%;
+  top:15%;
+}
+.footer{
+  margin-top: 90%;
+}
+
+}

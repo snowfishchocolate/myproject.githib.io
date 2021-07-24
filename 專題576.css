@@ -1,0 +1,412 @@
+
+@media(max-width:577px){
+  .logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+  nav {
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    position:fixed;
+    transition: top 0.5s ease-in-out;
+    line-height: 100px;
+    color: white;
+    align-items: center;
+  }
+  .item{
+    height: 50px;
+    font-size: 0px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .item .logo{
+    width: 20%;
+    height: 100px;
+    background-size: 110%;
+  }
+  .hamburger{
+    width: 50px;
+    height: 30px;
+    background-image: url(./image/PNG/PNG/hamburger.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .hamburger-ul{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left:60px;
+    top:80px;
+    background-color: rgb(44, 46, 46);
+    list-style: none;
+    font-size: 20px;
+    display: none;
+  }
+  .hamburger-ul li{
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .hamburger-ul li:hover{
+    text-decoration: underline 5px solid white;
+  }
+  .cross{
+    width: 60px;
+    height: 60px;
+    background-image: url(./image/PNG/PNG/cross.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-25%);
+    display: none;
+  }
+  .eatout{
+    position: absolute;
+    top:50%;
+    left: 80%;
+    transform: translateY(-50%);
+  }
+  .banner {
+    width: 100%;
+    background-image: url(./image/roasted-pork切好.png);
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: -69%;
+    z-index: -4;
+    overflow: hidden;
+  }
+  .text {
+    width: 460px;
+    position: absolute;
+    left: 35%;
+    top: 53%;
+    color: white;
+  }
+  .text h2 {
+    font-family: "Sitka Small";
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .text p {
+    font-family: "Sitka Small";
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  .text button {
+    width: 220px;
+    height: 60px;
+    background-color: #fbc644;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+  .news {
+    width: 100%;
+    height: 700px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .news h1{
+    width: 100%;
+    height: 50px;
+    line-height: 50px
+  }
+  .news .p1 {
+    width: 0%;
+    height: 95%;
+    background-image: url(./image/freepik-tomato.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top 1% left 30px;
+    background-color: transparent;
+    filter:drop-shadow(5px 5px 30px black);
+  }
+  .news .p2 {
+    width: 0%;
+    height: 95%;
+    background-image: url(./image/freepik-mushroom-2.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: top 50% left 1%;
+    background-color: transparent;
+    filter:drop-shadow(5px 5px 20px black);
+  }
+  .news .container {
+    width: 100%;
+    height: 95%;
+    background-color: crimson;
+    filter:drop-shadow(5px 5px 20px black);
+  }
+  .news-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .news-area .content {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content img {
+    width: 150px;
+    height: 40px;
+    margin-top:-30%;
+    margin-right: 50%;
+  }
+  .content h2 {
+    width: 200px;
+    height: 50px;
+    margin-left: 40%;
+    margin-top: 3%;
+  }
+  .content p {
+    width: 100px;
+    height: 50px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+  }
+  .content span {
+    width: 100px;
+    height: 50px;
+   margin-top:-28%;
+   margin-left: -75%;
+    color: white;
+    font-size: 20px;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .menu-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-attachment: fixed;
+      background-image: url(./image/juicy-steak.jpg);
+      position: absolute;
+  }
+  .menu-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/原肉口感.PNG);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+  }
+  .menu p {
+    width: 80%;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 300%;
+    transform: translateX(-50%);
+  }
+  .menu-button {
+    width: 550px;
+    position: absolute;
+    top:23% ;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu-button .button {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 3px 3px 15px black;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30%;
+  }
+  .hand{
+    position: absolute;
+    left: 0%;
+    top:10%;
+  }
+  .slide{
+    margin-top: -400px;
+  }
+  .slide .container .content{
+    width: 400px;
+  }
+  .slide-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-position: right 35% bottom 35%;;
+    background-attachment: fixed;
+    background-image: url(./image/gallery/排餐.jpg);
+    position: absolute;
+  }
+  .slide-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/美食當前.PNG);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .meal,.appetite{
+    width: 180px;
+    height: 180px;
+    margin-top: -20%;
+  }
+  .slide .hand{
+    position: absolute;
+    left: 85%;
+    top: -40%;
+  }
+  .about{
+    margin-top: -250px;
+  }
+  .about-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-attachment: fixed;
+     background-image: url(./image/時鐘牆.JPG);
+     position: absolute;
+  }
+  .about-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/銀牛故事.png);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .about .container {
+    height: 1200px;
+  }
+  .about p {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  .about .container .content {
+    width: 600px;
+    height: 700px;
+    background-color: white; 
+    box-shadow: 3px 3px 15px black;
+    margin:55% auto;
+    display: flex;
+  }
+  footer{
+    margin-top: -500px;
+  }
+  .footer{
+    margin-top: 80%;
+  }
+  .footer,.icon,.word{
+    width: 100%;
+    height: 20%;
+  }
+  .contactus,footer .logo,.open{
+    width: 33%;
+    height: 100%;
+    font-size: 10px;
+  }
+  .contactus {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .logoimg{
+    width: 200px;
+    height: 200px;
+    background-image: url(./image/PNG/PNG/logo_4.png);
+    background-size: 120%;
+    background-position: 205% 5%;
+    background-repeat: no-repeat;
+  }
+  .open {
+    color: white;
+  }
+  .open table{
+    margin: 0 auto;
+  }
+  .icon{
+    display: flex;
+    width: 100px;
+    background-color: rgba(165, 42, 42, 0.007);
+  }
+  .icona{
+    width: 90px;
+    height: 90px;
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color: rgba(222, 184, 135, 0);
+  }
+  .icon{
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icona{
+    width: 60px;
+    height: 60px;
+  }
+  .word{
+    font-size: 10px;
+  }
+  .option{
+    width: 600px;
+    height: 1000px;
+    margin: 130% auto; /* 15% from the top and centered */
+    position: relative;
+    left: 0;
+    top:0;
+    background-repeat: no-repeat;
+  }
+  .option-close{
+    position: absolute;
+    left: 75%;
+    top:20%;
+  }
+  }  
+
+  
+    
