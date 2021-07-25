@@ -307,6 +307,19 @@
     height: 120px;
     margin-top: -85%;
   }
+  .meal-modal ul li img{
+    /* width: 30%; */
+   
+    background-size: 50%;
+  }
+  .appetite-close{
+    position: absolute;
+    top:17%;
+  }
+  .close{
+    position: absolute;
+    top:17%;
+  }
   .slide .hand{
     position: absolute;
     left: 60%;

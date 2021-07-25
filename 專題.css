@@ -587,12 +587,12 @@
       .appetite-close{
         position: absolute;
         left: 50%;
-        top:23%;
+        top:27%;
       }
       .close{
         position: absolute;
         left: 50%;
-        top:23%;
+        top:27%;
       }
       .close:hover ,.appetite-close:hover{
         border: 2px solid orange;
