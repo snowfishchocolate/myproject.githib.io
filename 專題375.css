@@ -252,8 +252,9 @@
   .hand{
     position: absolute;
     left: 72%;
-    top:-9%;
+    top:-26%;
     background-size: 60%;
+    z-index: -10;
   }
   .menu-button {
     width: 300px;
