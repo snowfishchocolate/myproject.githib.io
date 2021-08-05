@@ -101,8 +101,13 @@
         z-index: -4;
         overflow: hidden;
       }
-      .item {
-      height: 60px;
+      .banner .container{
+        display: grid;
+        grid-template-columns: 23% 23% 15% 15% 23%;
+        grid-template-rows: repeat(4,25%);
+      }
+      .item {/*<!--//下拉式選單//-->*/
+        height: 60px;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -157,10 +162,12 @@
       }
       .text {
         width: 460px;
-        position: absolute;
+        /* position: absolute;
         left: 65%;
-        top: 33%;
+        top: 33%; */
         color: white;
+        grid-column: 4/5;
+        grid-row: 3/4;
       }
       .text h2 {
         font-family: "Sitka Small";
@@ -335,10 +342,7 @@
       }
 
       .pork:hover {
-        background-image: url(./image/PNG/粉紅豬_1.png);
-        background-position: center;
-        background-size: 80%;
-        background-repeat: no-repeat;
+        background-color: pink;
       }
 
       .beef {
@@ -349,10 +353,8 @@
       }
 
       .beef:hover {
-        background-image: url(./image/PNG/咖啡牛.png);
-        background-position: center;
-        background-size: 90%;
-        background-repeat: no-repeat;
+        background-color: #764A21;
+        color: white;
       }
       .lamb {
         background-image: url(./image/PNG/lamb.png);
@@ -361,34 +363,27 @@
         background-repeat: no-repeat;
       }
       .lamb:hover{
-        background-image: url(./image/PNG/yellow\ lamb.png);
-        background-position: center;
-        background-size: 60%;
-        background-repeat: no-repeat;
+       background-color: #F5D926;
       }
       .seafood {
-        background-image: url(./image/PNG/seafood.png);
+        background-image: url(./image/PNG/fish.png);
         background-position: center;
         background-size: 80%;
         background-repeat: no-repeat;
       }
       .seafood:hover{
-        background-image: url(./image/PNG/blue\ fish.png);
-        background-position: center;
-        background-size: 80%;
-        background-repeat: no-repeat;
+        background-color: #336CB5;
+        color: white;
       }
       .chicken {
-        background-image: url(./image/PNG/chicken.png);
+        background-image: url(./image/PNG/chicken1.png);
         background-position: center;
         background-size: 45%;
         background-repeat: no-repeat;
       }
       .chicken:hover{
-        background-image: url(./image/PNG/red\ chicken.png);
-        background-position: center;
-        background-size: 45%;
-        background-repeat: no-repeat;
+        background-color: #E61A14;
+        color: white;
       }
       .option-modal{
         background-color: rgba(0, 0, 0, 0.493);
@@ -592,7 +587,7 @@
       .close{
         position: absolute;
         left: 50%;
-        top:27%;
+        top:23%;
       }
       .close:hover ,.appetite-close:hover{
         border: 2px solid orange;
