@@ -1,884 +1,393 @@
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html{
-        scroll-behavior: smooth;
-    }
-      a{
-        text-decoration:none;
-        color: white;
-      }
-      body {
-        background-color: #f5f4f0;
-        text-align: center;
-      }
-      .hideup nav {
-        top: -80px;
-      }
-      #side-menu{
-        position: fixed;
-        right: 0;
-        top: 50%;
-        width: 400px;
-        height: 300px;
-        margin-right:60px;
-        background-color: #fbc7449d;
-        z-index: 50;
-        border-radius: 80px 5px 5px 80px;
-        border-right: none;
-        display: none;
-      }
-      #side-button{
-        position: fixed;
-        right: 0;
-        top: 50%;
-        width: 50px;
-        height: 300px;
-        background-color: #fbc7449d;
-        cursor: pointer;
-        z-index: 50;
-      }
-      #side-button:hover{
-        outline: #659E43 5px solid;
-      }
-      #side-button p{
-        width: 45px;
-        height: 45px;
-        font-size: 40px;
-        color: white;
-        margin-top: 250%;
-      }
-      #side-menu ul{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-      }
-      #side-menu li{
-        list-style: none;
-        font-size: 30px;
-        color: white;
-        font-weight: 700;
-      }
-      #side-menu li:hover{
-        text-decoration: underline white 5px;
-      }
-      .hamburger-ul{
-        display: none;
-      }
-      .container {
-        max-width: 1200px;
-        height: 1000px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-      }
-      nav {
-        width: 100%;
-        height: 100px;
-        left: 0px;
-        top: 0px;
-        position:fixed;
-        transition: top 0.5s ease-in-out;
-        line-height: 100px;
-        color: white;
-        align-items: center;
-      }
-      .banner {
-        width: 100%;
-        background-image: url(./image/roasted-pork切好.png);
-        height: 1000px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        z-index: -4;
-        overflow: hidden;
-      }
-      .banner .container{
-        display: grid;
-        grid-template-columns: 23% 23% 15% 15% 23%;
-        grid-template-rows: repeat(4,25%);
-      }
-      .item {/*<!--//下拉式選單//-->*/
-        height: 60px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-        margin-left: 50px;
-      }
-      .item ul {
-        width: 55%;
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        line-height: 100px;
-      }
-      .item ul a{
-        height: 50px;
-        align-items: center;
-        padding: 5px 5px;
-      }
-      .item ul a:hover{
-        background-color: #fbc644;
-        padding: 10px 10px;
-        border-radius: 10px;
-      }
-      .item .logo{
-        width: 20%;
-        height: 100px;
-        background-image: url(./image/PNG/PNG/logo_4.png);
-        background-size: 70%;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .eatout{
-        width: 15%;
-        height: 100px;
-        display: flex;
-      }
-      .panda{
-        width: 50%;
-        height: 100%;
-        background-image: url(./image/PNG/PNG/panda.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      .uber{
-        width: 50%;
-        height: 100%;
-        background-image: url(./image/PNG/PNG/uber.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      .text {
-        width: 460px;
-        /* position: absolute;
-        left: 65%;
-        top: 33%; */
-        color: white;
-        grid-column: 4/5;
-        grid-row: 3/4;
-      }
-      .text h2 {
-        font-family: "Sitka Small";
-        font-size: 65px;
-        margin: 0 auto;
-      }
-      .text p {
-        font-family: "Sitka Small";
-        font-size: 30px;
-        margin: 0 auto;
-      }
-      .text button {
-        width: 328px;
-        height: 78px;
-        background-color: #fbc644;
-        margin: 0 auto;
-        border-radius: 15px;
-        font-size: 30px;
-      }
-      .news {
-        width: 100%;
-        height: 700px;
-        margin-top: 1200px;
-        display: flex;
-        justify-content: space-between;
-      }
-      .news h1{
-        width: 100%;
-        height: 50px;
-        line-height: 50px
-      }
-      .news .p1 {
-        width: 30%;
-        height: 95%;
-        background-image: url(./image/freepik-tomato.png);
-        background-repeat: no-repeat;
-        background-size: 70%;
-        background-position: top 1% left 50px;
-        background-color: chocolate;
-        filter:drop-shadow(5px 5px 30px black);
-      }
-      .news .p2 {
-        width: 30%;
-        height: 95%;
-        background-image: url(./image/freepik-mushroom-2.png);
-        background-repeat: no-repeat;
-        background-size: 120%;
-        background-position: top 50% left 1%;
-        background-color: cadetblue;
-        filter:drop-shadow(5px 5px 20px black);
-      }
-      .news .container {
-        width: 40%;
-        height: 95%;
-        background-color: crimson;
-        filter:drop-shadow(5px 5px 20px black);
-      }
-      .news-area{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 15px;
-      }
-      .news-area .content {
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .content img {
-        width: 200px;
-        height: 50px;
-        margin-top:-25%;
-        margin-right: 50%;
-      }
-      .content h2 {
-        width: 200px;
-        height: 50px;
-        margin-left: 45%;
-        margin-top: 3%;
-      }
-      .content p {
-        width: 100px;
-        height: 50px;
-        margin-left: 55%;
-        margin-bottom: 10%;
-      }
-      .content span {
-        width: 100px;
-        height: 50px;
-       margin-top:-23%;
-       margin-left: -70%;
-        color: white;
-        font-size: 20px;
-      }
-      .news a {
-        font-size: 20px;
-        color: blue;
-        position: absolute;
-        left: 68%;
-        top: 89%;
-      }
-      .menu {
-        width: 100%;
-        margin-top: 50px;
-      }
-      .menu-1{
-        width: 100%;
-        height: 800px;
-        background-size:cover;
-        background-attachment: fixed;
-         background-image: url(./image/juicy-steak.jpg);
-         position: absolute;
-      }
-      .menu-2{
-        width: 100%;
-        height: 800px;
-        background-size:center;
-        background-position: center;
-        background-image: url(./image/原肉口感.PNG);
-        position: absolute;
-        background-repeat: no-repeat;
-        
-      }
-      .menu p {
-        width: 80%;
-        color: white;
-        font-size: 40px;
-        position: absolute;
-        left: 50%;
-        top: 300%;
-        transform: translateX(-50%);
-      }
-      .menu-button {
-        width: 1200px;
-        position: absolute;
-        top:45% ;
-        display: flex;
-        justify-content: space-between;
-      }
-      .menu-button .button {
-        width: 200px;
-        height: 200px;
-        background-color: white;
-        box-shadow: 3px 3px 15px black;
-        font-size: 30px;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-      }
-      .hand{
-        width: 150px;
-        height: 200px;
-        background-image: url(./image/手1.gif);
-        background-position: center;
-        background-size: 120%;
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 0%;
-        top:-55%;
-        z-index: 300;
-        filter: drop-shadow(2px 2px 10px rgb(112, 111, 111));
-      }
-      .pork{
-        background-image: url(./image/PNG/pork.png);
-        background-position: center;
-        background-size: 80%;
-        background-repeat: no-repeat;
-      }
-
-      .pork:hover {
-        background-color: pink;
-      }
-
-      .beef {
-        background-image: url(./image/PNG/beef.png);
-        background-position: center;
-        background-size: 90%;
-        background-repeat: no-repeat;
-      }
-
-      .beef:hover {
-        background-color: #764A21;
-        color: white;
-      }
-      .lamb {
-        background-image: url(./image/PNG/lamb.png);
-        background-position: center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-      }
-      .lamb:hover{
-       background-color: #F5D926;
-      }
-      .seafood {
-        background-image: url(./image/PNG/fish.png);
-        background-position: center;
-        background-size: 80%;
-        background-repeat: no-repeat;
-      }
-      .seafood:hover{
-        background-color: #336CB5;
-        color: white;
-      }
-      .chicken {
-        background-image: url(./image/PNG/chicken1.png);
-        background-position: center;
-        background-size: 45%;
-        background-repeat: no-repeat;
-      }
-      .chicken:hover{
-        background-color: #E61A14;
-        color: white;
-      }
-      .option-modal{
-        background-color: rgba(0, 0, 0, 0.493);
-        width: 100%; /* Full width */
-        height: 900vh; /* Full height */
-        z-index: 209; /* Sit on top */
-        position: fixed; /*Stay in place*/
-        overflow: auto; /* Enable scroll if needed */
-        position: relative;
-        position: absolute;
-        left: 0;
-        top:0;
-        display: none;
-      }
-      .option{
-        width: 800px;
-        height: 1000px;
-        margin: 130% auto; /* 15% from the top and centered */
-        position: relative;
-        left: 0;
-        top:0;
-        /* display: none; */
-      }
-      .option-close{
-        font-size: 30px;
-        color: white;
-        background-color: red;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 50%;
-        position: absolute;
-        left: 75%;
-        top:15%;
-        cursor: pointer;
-      }
-      .option-close:hover{
-        border: 4px solid orange;
-      }
-      .mpork{
-        position: relative;
-        left: 0;
-        top:0;
-        background-image: url(./image/PNG/PNG/pork\ menu_6.png);
-        background-position:right 85% bottom 45%;
-        background-size: 100%;
-        /* display: none; */
-      } 
-      .mlamb{
-        position: relative;
-        left: 0;
-        top:0;
-        background-image: url(./image/PNG/PNG/lamb\ menu_1.png);
-        background-position:right 85% bottom 45%;
-        background-size: 100%;
-        display: none;
-      } 
-      .mbeef{
-        position: relative;
-        left: 0;
-        top:0;
-        background-image: url(./image/PNG/PNG/beef\ menu.png);
-        background-position:right 85% bottom 45%;
-        background-size: 100%;
-        display: none;
-      }
-      .mchicken{
-        position: relative;
-        left: 0;
-        top:0;
-        background-image: url(./image/PNG/PNG/chicken\ menu_1.png);
-        background-position:right 85% bottom 45%;
-        background-size: 100%;
-        display: none;
-      }
-      .mseafood{
-        position: relative;
-        left: 0;
-        top:0;
-        background-image: url(./image/PNG/PNG/seafood\ menu_1.png);
-        background-position:right 85% bottom 45%;
-        background-size: 100%;
-        display: none;
-      }
-      .slide{
-        width: 100%;
-      }
-      .slide-1{
-        width: 100%;
-        height: 800px;
-        background-size:cover;
-        background-position: right 35% bottom 35%;;
-        background-attachment: fixed;
-        background-image: url(./image/gallery/排餐.jpg);
-        position: absolute;
-      }
-      .slide-2{
-        width: 100%;
-        height: 800px;
-        background-size:center;
-        background-position: center;
-        background-image: url(./image/美食當前.PNG);
-        position: absolute;
-        background-repeat: no-repeat;
-        
-      }
-      .slide .container .content{
-        width: 550px;
-        height: 500px;
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: space-between;
-      }
-      .slide .hand{
-        position: absolute;
-        left: 85%;
-        top: -25%;
-      }
-      .meal,.appetite{
-        width: 250px;
-        height: 250px;
-        background-color: rgb(222, 148, 135);
-        box-shadow: 3px 3px 15px black;
-        cursor: pointer;
-      }
-      .meal{
-        background-image: url(./image/熱呼呼123.gif);
-        background-position: center;
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-color: white;
-        font-size: 30px;
-      }
-      .appetite{
-        background-image: url(./image/沙拉.gif);
-        background-position: center;
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-color: white;
-        font-size: 30px;
-      }
-      .meal-modal{
-        margin: 0;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.692);
-        width: 100%;
-        height: 1000vh;
-        z-index: 1000;
-        position: fixed;
-        overflow: auto; /*Enable scroll if needed */
-        position: absolute;
-        left: 0;
-        top:0;
-        display: none;
-      }
-      .appetite-modal{
-        margin: 0;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.692);
-        width: 100%;
-        height: 1000vh;
-        z-index: 1000;
-        position: fixed;
-        overflow: auto;/*Enable scroll if needed*/
-        position: absolute;
-        left: 0;
-        top:0;
-        display: none;
-      }
-      .b1,.a1{
-        margin: 220% auto;
-      }
-      .splide__slide{
-        color: white;
-        font-size: 20px;
-      }
-      .splide__slide img{
-        width: 800px;
-        height: 600px;
-      }
-      .close,.appetite-close{
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
-        font-size: 40px;
-        font-weight: 600;
-        border-radius: 50%;
-        background-color: rgb(194, 12, 12);
-        cursor: pointer;
-        z-index: 50;
-      }
-      .appetite-close{
-        position: absolute;
-        left: 50%;
-        top:27%;
-      }
-      .close{
-        position: absolute;
-        left: 50%;
-        top:23%;
-      }
-      .close:hover ,.appetite-close:hover{
-        border: 2px solid orange;
-      }
-      .splide__arrow{
-        background-color: transparent;
-        background-color: whitesmoke;
-        font-size: 35px;
-      }
-      .about {
-        width: 100%;
-      }
-      .about-1{
-        width: 100%;
-        height: 800px;
-        background-size:cover;
-        background-attachment: fixed;
-         background-image: url(./image/時鐘牆.JPG);
-         position: absolute;
-
-      }
-      .about-2{
-        width: 100%;
-        height: 800px;
-        background-size:center;
-        background-position: center;
-        background-image: url(./image/銀牛故事.png);
-        position: absolute;
-        background-repeat: no-repeat;
-      }
-      .about .container {
-        height: 1200px;
-      }
-      .about p {
-        color: white;
-        font-size: 30px;
-        position: absolute;
-        left: 50%;
-        top: 20%;
-        transform: translateX(-50%);
-      }
-      .about .container .content {
-        width: 800px;
-        height: 700px;
-        background-color: white; 
-        box-shadow: 3px 3px 15px black;
-        margin:40% auto;
-        display: flex;
-      }
-     
-      .img-container{
-        -webkit-perspective: 700;
-        -moz-perspective: 700;
-        perspective: 700;
-      }
-      .img{
-        margin: 20px; 
-        background-size: cover;
-        background-position:right 45% bottom 42%;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 200px;
-        color: #fff;
-        transition: all 0.6s ease;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        position: relative;    
-        -webkit-perspective: 700;
-        -moz-perspective: 700;
-        perspective: 700;
-        background-image: url(./image/阿牛.JPG);
-        border: 4px solid gold;
-        margin: 20px auto;
-      }
-      .place .front , .place .back{
-        background-image: url(./image/PNG/PNG/human\ coin.png); 
-      }
-      
-      .front , .back {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200px;
-        height: 200px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-size: 265%;
-        background-position:right 45% bottom 42%;
-        filter: drop-shadow(1px 6px 5px rgb(141, 140, 140));
-        
-      }
-      .img:hover{
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-      }
-/* /////////////////////////// */
-      .mcontainer{
-        -webkit-perspective: 700;
-        -moz-perspective: 700;
-        perspective: 700;
-        
-      }
-      .mimg{
-        background-size: 130%;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        transition: all 0.6s ease;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        position: relative;
-        -webkit-perspective: 700;
-        -moz-perspective: 700;
-        perspective: 700;
-        background-image: url(./image/趴著MILO.jpg);
-        margin: 20px auto;
-        border: 4px solid gold;
-      }
-      .mfront , .mback {
-        background-image: url(./image/PNG/PNG/dog\ coin_1.png); 
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200px;
-        height: 200px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-size: 265%;
-        background-position:right 45% bottom 42%; 
-        filter: drop-shadow(1px 6px 5px rgb(141, 140, 140));
-      }
-      .mimg:hover{
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-      }
-      /* ///////////////////////////// */
-      .place ,.milo{
-        width: 100%;
-        height: 50%;
-      }
-      .place .p{
-        width: 80%;
-        height:fit-content;
-        font-size: 20px;
-        padding:30px 10px;
-        margin: 0 auto;
-      }
-      .milo .p{
-        width: 60%;
-        height:fit-content;
-        font-size: 20px;
-        padding:30px 10px;
-        margin: 0 auto;
-      }
-      .splide{
-        width: 100%;
-        height: 500px;
-      }
-      footer{
-        width: 100%;
-        height: 50%;
-        margin-top: -50%;
-        background-image: url(./image/筆刷邊框-4.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-      }
-      .footer,.icon,.word{
-        width: 100%;
-        height: 20%;
-      }
-      .footer {
-        margin-top: 60%;
-        display: flex;
-        justify-content: space-between;
-      }
-      .contactus,footer .logo,.open{
-        width: 33%;
-        height: 100%;
-      }
-      .contactus {
-        color: white;
-        display: flex;
-        flex-direction: column;
-      }
-      footer .footer .logoimg{
-        width: 400px;
-        height: 200px;
-        background-image: url(./image/PNG/PNG/logo_4.png);
-        background-size: cover;
-        background-position: 85% 15%;
-        /* background-color: darkblue; */
-      }
-      .open {
-        color: white;
-      }
-      .open table{
-        margin: 0 auto;
-      }
-      .icon{
-        display: flex;
-        width: 100px;
-        background-color: rgba(165, 42, 42, 0.007);
-      }
-      .icona{
-        width: 90px;
-        height: 90px;
-        background-size:90%;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0 auto;
-        background-color: rgba(222, 184, 135, 0);
-      }
-      .icon{
-        width: 400px;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-      }
-      .fb{
-        background-image: url(./image/PNG/fb.png);
-      }
-      .line{
-        background-image: url(./image/PNG/line.png);
-      }
-      .fb:hover{
-        background-image: url(./image/PNG/blue\ fb.png);
-      }
-      .line:hover{
-        background-image: url(./image/PNG/green\ line.png);
-      }
-      .contactus img {
-        width: 5%;
-      }
-      .op{
-        width: 50px;
-        height: 20px;
-      }
-      .word{
-        width: 100%;
-        height: 60px;
-        color: white;
-        font-size: 18px;
-        
-      }
-
-
-
-      /* ////////////////////////////////wowjs */
-      @-webkit-keyframes slideOutRight{
-        0%{
-            -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
-        }
-        100%{
-            -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-        }
-    }
-    @keyframes slideOutRight{
-        0%{
-            -webkit-transform: translateX(-800px);
-            -ms-transform: translateX(-800px);
-            transform: translateX(-800px);
-        }
-        100%{
-            -webkit-transform: translateX(0px);
-            -ms-transform: translateX(0px);
-            transform: translateX(0px);
-        }
-    }
-    .slideOutRight{
-        -webkit-animation-name:slideOutRight ;
-        animation-name: slideOutRight;
-        animation-duration: 2s;
-        transition-timing-function:ease-out;
-    }
-    .text button:hover {
-      -webkit-animation: animate__bounceIn 1s; 
-      animation: animate__bounceIn 1s;
+@media(max-width:769px){
+  .logo{
+    margin: 0 auto;
+    /* background-color: yellow; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
+  nav {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    position:fixed;
+    transition: top 0.5s ease-in-out;
+    line-height: 100px;
+    color: white;
+    align-items: center;
+  }
+  .item{
+    font-size: 0px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .item .logo{
+    width: 20%;
+    height: 100px;
+    background-size: 110%;
+  }
+  .hamburger{
+    width: 60px;
+    height: 60px;
+    background-image: url(./image/PNG/PNG/hamburger.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-25%);
+    cursor: pointer;
+  }
+  .hamburger-ul{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left:60px;
+    top:80px;
+    background-color: rgb(44, 46, 46);
+    list-style: none;
+    font-size: 20px;
+    display: none;
+  }
+  .hamburger-ul li{
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .hamburger-ul li:hover{
+    text-decoration: underline 5px solid white;
+  }
+  .cross{
+    width: 60px;
+    height: 60px;
+    background-image: url(./image/PNG/PNG/cross.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-25%);
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    background-image: url(./image/roasted-pork切好.png);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: -36%;
+    z-index: -4;
+    overflow: hidden;
+  }
+  /* .text {
+    width: 460px;
+    position: absolute;
+    left: 48%;
+    top: 38%;
+    color: white;
+  }
+  .text h2 {
+    font-family: "Sitka Small";
+    font-size: 45px;
+    margin: 0 auto;
+  }
+  .text p {
+    font-family: "Sitka Small";
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .text button {
+    width: 300px;
+    height: 65px;
+    background-color: #fbc644;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 25px;
+  } */
+  .news {
+    width: 100%;
+    height: 700px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .news h1{
+    width: 100%;
+    height: 50px;
+    line-height: 50px
+  }
+  .news .p1 {
+    width: 20%;
+    height: 95%;
+    background-image: url(./image/freepik-tomato.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top 1% left 30px;
+    background-color: chocolate;
+    filter:drop-shadow(5px 5px 30px black);
+  }
+  .news .p2 {
+    width: 20%;
+    height: 95%;
+    background-image: url(./image/freepik-mushroom-2.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: top 50% left 1%;
+    background-color: cadetblue;
+    filter:drop-shadow(5px 5px 20px black);
+  }
+  .news .container {
+    width: 60%;
+    height: 95%;
+    background-color: crimson;
+    filter:drop-shadow(5px 5px 20px black);
+  }
+  .news-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .news-area .content {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content img {
+    width: 150px;
+    height: 40px;
+    margin-top:-30%;
+    margin-right: 50%;
+  }
+  .content h2 {
+    width: 200px;
+    height: 50px;
+    margin-left: 40%;
+    margin-top: 3%;
+  }
+  .content p {
+    width: 100px;
+    height: 50px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+  }
+  .content span {
+    width: 100px;
+    height: 50px;
+   margin-top:-28%;
+   margin-left: -75%;
+    color: white;
+    font-size: 20px;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .menu-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-attachment: fixed;
+      background-image: url(./image/juicy-steak.jpg);
+      position: absolute;
+  }
+  .menu-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/原肉口感.PNG);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+  }
+  .menu p {
+    width: 80%;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 300%;
+    transform: translateX(-50%);
+  }
+  .menu-button {
+    width: 700px;
+    position: absolute;
+    top:17% ;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu-button .button {
+    width: 120px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 3px 3px 15px black;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30%;
+  }
+  .hand{
+    position: absolute;
+    left: 0%;
+    top:30%;
+  }
+  .slide{
+    margin-top: -400px;
+  }
+  .slide-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-position: right 35% bottom 35%;;
+    background-attachment: fixed;
+    background-image: url(./image/gallery/排餐.jpg);
+    position: absolute;
+  }
+  .slide-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/美食當前.PNG);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .meal,.appetite{
+    width: 200px;
+    height: 200px;
+    margin-top: -20%;
+  }
+  .appetite-close{
+    position: absolute;
+    top:27%;
+  }
+  .close{
+    position: absolute;
+    top:18%;
+  }
+  .slide .hand{
+    position: absolute;
+    left: 85%;
+    top: -40%;
+  }
+  .about{
+    margin-top: -250px;
+  }
+  .about-1{
+    width: 100%;
+    height: 500px;
+    background-size:90%;
+    background-attachment: fixed;
+     background-image: url(./image/時鐘牆.JPG);
+     position: absolute;
+  }
+  .about-2{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    background-image: url(./image/銀牛故事.png);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .about .container {
+    height: 1200px;
+  }
+  .about p {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  .about .container .content {
+    width: 650px;
+    height: 750px;
+    background-color: white; 
+    box-shadow: 3px 3px 15px black;
+    margin:40% auto;
+    display: flex;
+  }
+  footer{
+    margin-top: -500px;
+  }
+  .footer{
+    margin-top: 60%;
+  }
+  .footer,.icon,.word{
+    width: 100%;
+    height: 20%;
+  }
+  .contactus,footer .logo,.open{
+    width: 33%;
+    height: 100%;
+    font-size: 10px;
+  }
+  .contactus {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .logoimg{
+    width: 200px;
+    height: 200px;
+    background-image: url(./image/PNG/PNG/logo_4.png);
+    background-size: 120%;
+    background-position: 85% 15%;
+    background-repeat: no-repeat;
+  }
+  .open {
+    color: white;
+  }
+  .open table{
+    margin: 0 auto;
+  }
+  .icon{
+    display: flex;
+    width: 100px;
+    background-color: rgba(165, 42, 42, 0.007);
+  }
+  .icona{
+    width: 90px;
+    height: 90px;
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color: rgba(222, 184, 135, 0);
+  }
+  .icon{
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icona{
+    width: 60px;
+    height: 60px;
+  }
+  .word{
+    font-size: 10px;
+  }
+      
+}
   
     
