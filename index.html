@@ -5,738 +5,505 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- //wow.js -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- ////SPLIDERRRRRR////// -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="splide.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
-
-    <!-- //jquery// -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-      crossorigin="anonymous"
-    ></script>
-    <!-- ///專題css////// -->
-    <link rel="stylesheet" href="./專題.css" />
-    <link rel="stylesheet" href="./專題1400.css" />
-    <link rel="stylesheet" href="./專題1200.css" />
-    <link rel="stylesheet" href="./專題992.css" />
-    <link rel="stylesheet" href="./專題855.css" />
-    <link rel="stylesheet" href="./專題800.css" />
-    <link rel="stylesheet" href="./專題768.css" />
-    <link rel="stylesheet" href="./專題689.css" />
-    <link rel="stylesheet" href="./專題576.css" />
-    <link rel="stylesheet" href="./專題375.css" />
+    <!-- ////////bootstrap//////// -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resume.css" />
   </head>
-
   <body>
-    <section class="option-modal">
-      <div class="option mpork">
-        <div class="option-close">X</div>
-      </div>
-      <div class="option mbeef">
-        <div class="option-close">X</div>
-      </div>
-      <div class="option mchicken">
-        <div class="option-close">X</div>
-      </div>
-      <div class="option mlamb">
-        <div class="option-close">X</div>
-      </div>
-      <div class="option mseafood">
-        <div class="option-close">X</div>
-      </div>
-    </section>
-    <section class="meal-modal">
-      <div class="close">X</div>
-      <div class="splide a1">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              百里香豬排
-              <img src="./image/gallery/排餐/百里香豬排.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              海鮮雙拼
-              <img src="./image/gallery/排餐/海鮮雙拼.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              紐西蘭沙朗牛排
-              <img src="./image/gallery/排餐/紐西蘭沙朗牛排.jpg" alt="" />
-            </li>
-            <li class="splide__slide" style="color: white">
-              海陸交響曲
-              <img src="./image/gallery/排餐/海陸交響曲.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              銀牛角羊排
-              <img src="./image/gallery/排餐/羊排.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              超級大胃王
-              <img src="./image/gallery/排餐/超級大衛王.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              銀牛角蜜汁雞排
-              <img src="./image/gallery/排餐/銀牛角蜜汁雞排.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              香煎帶骨羊小排
-              <img src="./image/gallery/排餐/香煎帶骨牛小排.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              香蒜橄欖油煎鮭魚
-              <img src="./image/gallery/排餐/香蒜橄欖油煎鮭魚.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              紐西蘭兒童餐
-              <img src="./image/gallery/紐西蘭兒童餐.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              外帶套餐
-              <img src="./image/gallery/外帶套餐.jpg" alt="" />
-            </li>
-          </ul>
+    <div>
+      <!-- /////////RWD modal/////////////// -->
+      <div class="modal fade" id="rwd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/micorsoft/">Microsoft</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/micorsoft.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <div class="appetite-modal">
-      <div class="appetite-close">X</div>
-      <div class="splide b1">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              一口沙拉<img src="./image/gallery/一口沙拉🥗.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              五香西芹牛筋<img src="./image/gallery/五香西芹牛筋.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              凱撒酸黃瓜沙拉<img
-                src="./image/gallery/凱撒酸黃瓜沙拉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              匈牙利紅椒五香薯餅<img
-                src="./image/gallery/匈牙利紅椒五香薯餅.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              千島沙拉<img src="./image/gallery/千島沙拉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              南瓜塔塔醬<img src="./image/gallery/南瓜塔塔醬🎃.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              四季平安<img src="./image/gallery/四季平安.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              培根椰菜<img src="./image/gallery/培根椰菜.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              塔香椒鹽雞腿<img src="./image/gallery/塔香椒鹽雞腿.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              塔香豆干與雞絲黃瓜<img
-                src="./image/gallery/塔香豆干與雞絲黃瓜.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              墨西哥辣醬雞肉<img
-                src="./image/gallery/墨西哥辣醬雞肉 辣的噴火🔥.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              奶油培根蘆筍<img src="./image/gallery/奶油培根蘆筍.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              年年有餘<img src="./image/gallery/年年有餘.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              微辣野蔬<img src="./image/gallery/微辣野蔬.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              橄欖油拌野菇<img src="./image/gallery/橄欖油拌野菇.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              法式香煎干貝<img src="./image/gallery/法式香煎干貝.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              涼拌百香青木瓜<img
-                src="./image/gallery/涼拌百香青木瓜.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              涼拌芥末小卷<img src="./image/gallery/涼拌芥末小卷.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              涼拌蘆筍蘑菇<img src="./image/gallery/涼拌蘆筍蘑菇.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              烏斯特檸檬牛肉<img
-                src="./image/gallery/烏斯特檸檬牛肉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              牛肉炒花椰菜<img
-                src="./image/gallery/牛肉炒花椰菜🥦.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              甜心沙拉<img src="./image/gallery/甜心沙拉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              羅密歐與祝英台<img
-                src="./image/gallery/羅密歐與祝英台 中西合璧.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              義大利火腿杏鮑菇<img
-                src="./image/gallery/義大利火腿杏鮑菇.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              聖塔芭芭拉<img src="./image/gallery/聖塔芭芭拉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              芹菜雞柳燴筆管麵<img
-                src="./image/gallery/芹菜雞柳燴筆管麵.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              茄汁黑橄欖鮭魚沙拉<img
-                src="./image/gallery/茄汁黑橄欖鮭魚沙拉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              莎莎牛肉<img src="./image/gallery/莎莎牛肉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              萬綠叢中一點紅<img
-                src="./image/gallery/萬綠叢中一點紅.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              蒜香雞腿<img src="./image/gallery/蒜香雞腿.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              蔓越莓蘋果沙拉<img
-                src="./image/gallery/蔓越莓蘋果沙拉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              蛋香馬鈴薯<img src="./image/gallery/蛋香馬鈴薯🥔.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              蜂蜜芥末五行蛋<img
-                src="./image/gallery/蜂蜜芥末五行蛋.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              蝦仁番茄蘿蔓沙拉<img
-                src="./image/gallery/蝦仁番茄蘿蔓沙拉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              蝦仁特調沙拉<img
-                src="./image/gallery/蝦仁🍤特調沙拉.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              西式雞油米粉<img src="./image/gallery/西式雞油米粉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              酥炸鱈魚香絲<img src="./image/gallery/酥炸鱈魚香絲.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              醉雞切盤<img src="./image/gallery/醉雞切盤.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              養生雞湯<img src="./image/gallery/養生雞湯.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              香煎節瓜蝦仁<img src="./image/gallery/香煎節瓜蝦仁.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              魯香豆干<img src="./image/gallery/魯香豆干.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              鮪魚凱撒沙拉<img
-                src="./image/gallery/鮪魚凱撒沙拉🥗.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              黃瓜炒牛肉<img src="./image/gallery/黃瓜炒牛肉.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              黃瓜蝦仁沙拉佐法式芥末醬<img
-                src="./image/gallery/黃瓜蝦仁沙拉佐法式芥末醬.jpg"
-                alt=""
-              />
-            </li>
-          </ul>
+      <!-- /////////project/////////////// -->
+      <div class="modal fade" id="project" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/myproject.githib.io/">銀牛角牛排</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/myproject.githib.io.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- /////////jquery/////////////// -->
+      <div class="modal fade" id="jquery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/todolist/">To do list</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/todolist.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ////API---modal///////// -->
+      <div class="modal fade" id="api" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>Fetch</tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api.TMDb/">TMDb電影</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api.TMDb.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api.weatherCard/">氣象局</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api.weatherCard.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>Ajax</tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api-alcohol/">Alcohol</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api-alcohol.git" class="code">(code)</a>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////SCSS-modal/////////////// -->
+      <div class="modal fade" id="scss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/scss.moonCard/">Moon card</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/scss.moonCard.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////JS100---MODAL///////////// -->
+      <div class="modal fade" id="js100" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.colorchange/">隨機變色</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.colorchange.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.input/">輸入框</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.input.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/ljs100..plusdecrease/">加減</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/ljs100..plusdecrease.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/js100.vechikesSilde/">汽車silde</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.vechikesSilde.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.wordSlide/">文字slide</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.wordSlide.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.sweet/">甜點網站</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.sweet.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/CRUD/">CRUD</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/CRUD.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/js30-drum/">Drum-Kit</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js30-drum.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <main id="fullpage">
+        <section class="section" id="a3">
+          <div class="slide" data-anchor="section1" id="section1">
+            <div class="button-group">
+              <a href="#section1">Work</a>
+              <a href="#section2">About</a>
+              <a href="#section3">Project</a>
+              <a href="#section4">Contact</a>
+            </div>
+            <div class="work">
+              <div>
+                <h1>您好，我是郁茹</h1>
+                <img src="./image/me.GIF" alt="">
+                <p>
+                  畢業後隻身在Genuine Seed Group泰國、新疆產區服務，為泰國員工和外國客戶間的橋梁。<br>
+                  把握機會參與職訓局工程師課程，希望能成為前端工程師。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="section2" id="section2">
+            <div class="button-group">
+              <a href="#section1">Work</a>
+              <a href="#section2">About</a>
+              <a href="#section3">Project</a>
+              <a href="#section4">Contact</a>
+            </div>
+            <div class="about">
+              <area>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          About me
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>我是黃郁茹，畢業於國立中興大學。</strong> 因農產業式微想轉職，加上對程式設計充滿熱忱，所以參加職訓局全端工程師的培訓。<br>
+                          過去的工作常與外國客戶接洽，自認英文能力佳，現今仍不斷加強英文能力部分。<br>
+                          【程式學習】<br>
+                          雖不是本科系出身，但喜歡用網路看影片、逛商場、查詢資料，常常遇到網頁讓消費者不便利的網站，所以想設計出如何才能讓人使用順暢的網站，加上現在資訊流通，人人使用網際網路成為一大趨勢，種種原因令我想轉職投奔程式設計業。一進入這個領域才發現網頁幫人們處理很多事情。從課堂中我習得CSS、Javascript、Sass、Laravel.....等語法，雖然短短幾個月，學習範圍有限，因此我持續利用網路學習資源，例如六角學院、Youtube教學影片，學習更深層的語法。因為我很喜歡動態互動效果，也希望獲得撰寫效果的能力，所以開始挑戰練習JS 100。
+                          希望自己設計的網站能獲得使用者的喜愛，平時練習寫程式外，更加強Adobe Illustrator和Adobe Photoshop的能力，把設計的物件加到個人網站中。
+                          專長:<br>
+                          <table>
+                            <tr>
+                              <td class="t1">程式設計</td>
+                              <td class="t2">美編設計</td>
+                              <td class="t3">工作態度</td>
+                            </tr>
+                            <tr>
+                              <td>CSS、HTML</td>
+                              <td>Adobe Illustrator</td>
+                              <td>對學習新技術具有熱情，具備良好的溝通及團隊合作能力。</td>
+                            </tr>
+                            <tr>
+                              <td>Javascrip、jQuery</td>
+                              <td>Adobe Photoshop</td>
+                              <td>樂觀活潑</td>
+                            </tr>
+                            <tr>
+                              <td>Bootstrap</td>
+                              <td>Adobe XD</td>
+                              <td>良好的溝通能力與團隊合作能力</td>
+                            </tr>
+                            <tr>
+                              <td>API 串接。Fetch、Ajax</td>
+                              <td>Figma</td>
+                              <td>喜歡接觸新事物</td>
+                            </tr>
+                            <tr>
+                              <td>RWD</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>SCSS/SASS</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                網頁版面規劃、套版、特效互動設計。
+                              </td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Work experience
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h3>2021/3~2021/6</h3>
+                          <p>
+                            <h4>大數據系統開發-全端工程師養成班培訓學員</h4>
+                            <h5>勞動部發展署</h5>
+                            1.學習寫程式的語法，例如Sass/SCSS、Parallax視差、SEO最佳化、Bootstrap 、Javascript、RWD、Laravel。<br>
+                            2.學習網站前後端開發，維護並優化頁面效能。<br>
+                            3. 網頁版面規劃、套版、特效互動設計。<br>
+                            4.學習Adobe Illustrator、Adobe Photoshop設計軟體使用方法和技巧。<br>
+                            5.製作個人專題。<br>
+                          </p><br>
+                          <h3>2020/10~2021/2</h3>
+                          <p>
+                            <h4>研究助理</h4>
+                            <h5>宇辰種苗股份有限公司(Your Chain Seed)</h5>
+                            1.溫室作物管理。<br>
+                            2.授粉。<br>
+                            3.調查、田間操作項目。<br>
+                            4.執行育種計畫。
+                          </p><br>
+                          <h3>2018/10~2019/1</h3>
+                          <p>
+                            <h4>泰國儲備幹部</h4>
+                            <h5>Genuine Seed (Thailand) Group </h5>
+                            1.第三方育種計畫執行與管理<br>
+                            主要職責：<br>
+                            *協助supervisors 執行各委託公司的育種計畫、各項目標工作推動與實作。<br>
+                            *監督計畫各項栽培之品質，按時提供書面報表紀錄。<br>
+                            *栽培進度溝通協調及跟進並將資訊回報客戶。<br>
+                            *校對數據及生產管理報表製作。<br>
+                            *熟悉計畫流程與溝通。<br>
+                            2.客戶關係維持<br>
+                            主要職責：<br>
+                            *客從遠方來：每季接待各公司的訪客(主要為歐洲及美國訂單客戶)、客戶回饋及建議紀錄。<br>
+                            *處理客戶問題並追蹤與紀錄，建立相應的客戶結構機制。<br>
+                            *提供客戶最新作物生長訊息。<br>
+                          </p><br>
+                          <h3>2018/10~2019/1</h3>
+                          <p>
+                            <h4>中國新疆實習生</h4>
+                            <h5>Genuine Seed (China) Group </h5>
+                            1.負責種子生產流程品質管制監督。<br>
+                            2.編制報表。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Education
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h3>2014/9~2018/6</h3>
+                          <strong>國立中興大學</strong>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Plus
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h3>Language skill</h3>
+                            <strong>Toeic 695</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+               
+                <div class="experience"></div>
+                <div class="education"></div>
+              </area>
+            </div>
+          </div>
+          <div class="slide" data-anchor="section3" id="section3">
+            <div class="button-group">
+              <a href="#section1">Work</a>
+              <a href="#section2">About</a>
+              <a href="#section3">Project</a>
+              <a href="#section4">Contact</a>
+            </div>
+            <div class="project">
+              <div class="project-inner">
+                <div>
+                    <div>
+                      <button  data-bs-toggle="modal" data-bs-target="#rwd">
+                        <a>RWD+切版</a>
+                      </button>
+                    </div>
+                </div>
+                <div>
+                  <div>
+                    <button  data-bs-toggle="modal" data-bs-target="#api">
+                      <a>API串接</a>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <button  data-bs-toggle="modal" data-bs-target="#js100">
+                      <a>JavaScript</a>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <button  data-bs-toggle="modal" data-bs-target="#project">
+                      <a>個人專題</a>
+                    </button>
+                  </div>
+                </div>
+               <div>
+                 <div>
+                  <button  data-bs-toggle="modal" data-bs-target="#jquery">
+                    <a>jQuery</a>
+                  </button>
+                 </div>
+               </div>
+                <div>
+                  <div>
+                    <button  data-bs-toggle="modal" data-bs-target="#scss">
+                      <a>SCSS</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="section4" id="section4">
+            <div class="button-group">
+              <a href="#section1">Work</a>
+              <a href="#section2">About</a>
+              <a href="#section3">Project</a>
+              <a href="#section4">Contact</a>
+            </div>
+            <div class="contact">
+              <table>
+                <tr>
+                  <td></td>
+                  <td>0933-648-722</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>hippohotfox@gmail.com</td>
+                </tr>
+              </table>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <div id="side-button">
-      <p>◀</p>
-    </div>
-    <section id="side-menu">
-      <ul>
-        <li><a href="#story">銀牛故事</a></li>
-        <li><a href="#news">最新消息</a></li>
-        <li><a href="#menu">真膳美饌</a></li>
-        <li><a href="#gallery">美食畫廊</a></li>
-        <li><a href="#contact">聯絡我們</a></li>
-      </ul>
-    </section>
-
-    <ul class="hamburger-ul">
-      <li class="nav-story"><a href="#story">銀牛故事</a></li>
-      <li class="discount"><a href="#news">最新消息</a></li>
-      <li class="food"><a href="#menu">真膳美饌</a></li>
-      <li class="site"><a href="#gallery">美食畫廊</a></li>
-      <li class="site"><a href="#contact">聯絡我們</a></li>
-    </ul>
-
-    <section class="banner">
-      <div class="container">
-        <nav>
-          <div class="item">
-            <div class="hamburger"></div>
-            <div class="cross"></div>
-            <div class="logo"></div>
-            <ul>
-              <li class="nav-story"><a href="#story">銀牛故事</a></li>
-              <li class="discount"><a href="#news">最新消息</a></li>
-              <li class="food"><a href="#menu">真膳美饌</a></li>
-              <li class="site"><a href="#gallery">美食畫廊</a></li>
-              <li class="site"><a href="#contact">聯絡我們</a></li>
-            </ul>
-            <div class="eatout">
-              <div class="panda"></div>
-              <div class="uber"></div>
-            </div>
-          </div>
-        </nav>
-        <div class="text">
-          <h2>來一客</h2>
-          <p>你絕對沒嚐過的鮮嫩咬勁 !</p>
-          <button><a href="#menu">馬上去!!</a></button>
-        </div>
-      </div>
-    </section>
-    <section id="news" class="news">
-      <div class="p1"></div>
-      <div class="container">
-        <h1>News & Events</h1>
-        <div class="news-area"></div>
-      </div>
-      <div class="p2"></div>
-    </section>
-    <section id="menu" class="menu">
-      <div class="menu-1"></div>
-      <div class="menu-2"></div>
-      <div class="container">
-        <div class="menu-button wow slideOutRight">
-          <div class="hand"></div>
-          <div class="button pork">豬</div>
-          <div class="button beef">牛</div>
-          <div class="button lamb">羊</div>
-          <div class="button chicken">雞</div>
-          <div class="button seafood">海鮮</div>
-        </div>
-      </div>
-    </section>
-    <section id="gallery" class="slide">
-      <div class="slide-1"></div>
-      <div class="slide-2"></div>
-      <div class="container">
-        <div class="content">
-          <div class="hand"></div>
-          <div class="meal">排餐</div>
-          <div class="appetite">精緻小菜</div>
-        </div>
-      </div>
-    </section>
-    <section id="story" class="about">
-      <div class="about-1"></div>
-      <div class="about-2"></div>
-      <div class="container">
-        <div class="content">
-          <div class="place">
-            <div class="img-container">
-              <div class="img">
-                <div class="front"></div>
-                <div class="back"></div>
-              </div>
-            </div>
-            <div class="p">
-              <button class="accordion">+</button>
-              <div class="panel">
-                【開業理念】<br />
-                老闆出身農家，每當吃飯時，總是大家庭的所有家人一同進餐，因此他很喜歡一夥人有說有笑，一同吃飯的場景。
-                年輕時於西餐廳服務，後來到清境經營雲南菜餐廳，在飲食領域已有多年經歷。
-                一次因緣際會下，在餐廳吃到重組肉的牛排，因此他希望未來能經營一間牛排店，讓顧客能吃到原汁原味的牛排。
-                所以「銀牛角」就此誕生了!
-              </div>
-            </div>
-          </div>
-          <div class="milo">
-            <div class="mcontainer">
-              <div class="mimg">
-                <div class="mfront"></div>
-                <div class="mback"></div>
-              </div>
-            </div>
-            <div class="p">
-              <button class="maccordion">+</button>
-              <div class="mpanel">
-                  【吉祥物】<br />
-                  大家好，我叫米魯。
-                  是店裡的吉祥物，我很親近人喔，喜歡我的話，趕快到店裡找我玩!
-              </div>
-              <div class="foot"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <section id="contact" class="container footer">
-        <section class="contactus">
-          <div>Contact Us</div>
-          <div>
-            <img src="./image/PNG/phone.png" alt="" />
-            09123456789
-          </div>
-          <div class="op"></div>
-          <div>
-            <img src="./image/PNG/mail.png" alt="" />
-            123@gmail.com
-          </div>
-          <div class="op"></div>
-          <div>
-            <img src="./image/PNG/house.png" alt="" />
-            台中市北屯區太原路三段 131號
-          </div>
-        </section>
-        <section class="logo">
-          <div class="logoimg"></div>
-        </section>
-        <section class="open">
-          <table>
-            <tr>
-              <td>開放時間</td>
-            </tr>
-            <tr>
-              <td>星期一</td>
-              <td>14:00-00:00</td>
-            </tr>
-            <tr>
-              <td>星期二</td>
-              <td>14:00-00:00</td>
-            </tr>
-            <tr>
-              <td>星期三</td>
-              <td>公休</td>
-            </tr>
-            <tr>
-              <td>星期四</td>
-              <td>14:00-00:00</td>
-            </tr>
-            <tr>
-              <td>星期五</td>
-              <td>14:00-00:00</td>
-            </tr>
-            <tr>
-              <td>星期六</td>
-              <td>14:00-00:00</td>
-            </tr>
-            <tr>
-              <td>星期日</td>
-              <td>14:00-00:00</td>
-            </tr>
-          </table>
-        </section>
-      </section>
-      <section class="icon">
-        <a
-          href="https://www.facebook.com/%E9%8A%80%E7%89%9B%E8%A7%92-474036240015120/"
-          ><div class="icona fb"></div>
-        </a>
-        <a
-          href="https://www.facebook.com/%E9%8A%80%E7%89%9B%E8%A7%92-474036240015120/"
-          ><div class="icona line"></div>
-        </a>
-      </section>
-      <p class="word">
-        some photos are designed by Freepik & Pixabay<br>
-        ©Copyright All Rights Reserved. Design by 銀牛角
-        僅供學習用途，如有侵權請來信告知。
-      </p>
-    </footer>
-
-    <script>
-      $(".text").addClass("wow slideOutRight");
-      $(".menu-button").addClass("wow slideOutRight");
-      $(".slide .content").addClass("wow slideOutRight");
-      $(".text button").hover(function () {
-        $(".text button").addClass("wow bounceIn");
-      });
-      new WOW().init();
-    </script>
-    <script>
-      // nav 往上捲//
-      var body = document.querySelector("body");
-      var nav = document.querySelector("nav");
-      lastScrollY = 0;
-      window.addEventListener("scroll", function () {
-        var a = this.scrollY;
-        // 判斷是向上捲動，而且捲軸超過 200px
-        if (a < lastScrollY) {
-          body.classList.remove("hideup");
-          nav.style.backgroundColor = "rgba(59, 57, 56, 0.589)";
-        } else {
-          body.classList.add("hideup");
-          nav.style.backgroundColor = "rgba(59, 57, 56, 0.589)";
-        }
-        lastScrollY = a;
-      });
-      //////////////////////hamburger/////////////
-      var hamburgerBtn = document.querySelector(".hamburger");
-      var crossBtn = document.querySelector(".cross");
-      var hamburgerDrop = document.querySelector(".hamburger-ul");
-      hamburgerBtn.addEventListener("click", function () {
-        hamhide();
-      });
-      function hamhide() {
-        if (hamburgerDrop.style.display == "block") {
-          hamburgerDrop.style.display = "none";
-        } else {
-          hamburgerDrop.style.display = "block";
-          hamburgerBtn.style.display = "none";
-          crossBtn.style.display = "block";
-        }
-      }
-      crossBtn.addEventListener("click", function () {
-        closehide();
-      });
-      function closehide() {
-        if (hamburgerDrop.style.display == "none") {
-          hamburgerDrop.style.display = "block";
-        } else {
-          hamburgerDrop.style.display = "none";
-          crossBtn.style.display = "none";
-          hamburgerBtn.style.display = "block";
-        }
-      }
-      ////////////side-menu////////////
-      var sideBtn = document.querySelector("#side-button");
-      var sideMenu = document.querySelector("#side-menu");
-      sideBtn.addEventListener("click", function () {
-        hide();
-      });
-      function hide() {
-        if (sideMenu.style.display == "block") {
-          sideMenu.style.display = "none";
-        } else {
-          sideMenu.style.display = "block";
-        }
-      }
-
-      //////////首頁news///////////////
-      var contents = [
-        {
-          title: "防疫大作戰",
-          date: "2021.12.12",
-          content: "外帶自取每滿599現折100元",
-        },
-        {
-          title: "防疫大作戰",
-          date: "2021.12.12",
-          content: "外帶自取每滿599現折100元",
-        },
-        {
-          title: "防疫大作戰",
-          date: "2021.12.12",
-          content: "外帶自取每滿599現折100元",
-        },
-      ];
-      var showBox = document.querySelector(".news-area");
-      contents.forEach(function (content) {
-        showBox.innerHTML += `
-        <div class="content">
-              <h2>${content.title}</h2>
-              <p>${content.content}</p>
-              <img src="./image/tag.png" alt="">
-              <span>${content.date}</span>
-        </div>
-        `;
-      });
-    </script>
-
-    <!-- ////slider////// -->
-    <script>
-      var mealBtn = document.querySelector(".slide .container .content .meal");
-      var appetiteBtn = document.querySelector(
-        ".slide .container .content .appetite"
-      );
-      var mealModal = document.querySelector(".meal-modal");
-      var appetiteModal = document.querySelector(".appetite-modal");
-      mealBtn.addEventListener("click", function () {
-        mealModal.style.display = "block";
-      });
-      appetiteBtn.addEventListener("click", function () {
-        appetiteModal.style.display = "block";
-      });
-      var closeBtn = document.querySelector(".close");
-      var appetiteClose = document.querySelector(".appetite-close");
-      closeBtn.addEventListener("click", function () {
-        mealModal.style.display = "none";
-      });
-      appetiteClose.addEventListener("click", function () {
-        appetiteModal.style.display = "none";
-      });
-    </script>
-    <!-- ////////////////////////menu///////////////// -->
-    <script>
-      var beefBtn = document.querySelector(".beef");
-      var chickenBtn = document.querySelector(".chicken");
-      var porkBtn = document.querySelector(".pork");
-      var seafoodBtn = document.querySelector(".seafood");
-      var lambBtn = document.querySelector(".lamb");
-      var beefShow = document.querySelector(".mbeef");
-      var porkShow = document.querySelector(".mpork");
-      var chickenShow = document.querySelector(".mchicken");
-      var lambShow = document.querySelector(".mlamb");
-      var seafoodShow = document.querySelector(".mseafood");
-      var optionModal = document.querySelector(".option-modal");
-      var optioncloseBtns = document.querySelectorAll(".option-close");
-
-      beefBtn.addEventListener("click", function () {
-        beefShow.style.display = "block";
-        optionModal.style.display = "block";
-      });
-      chickenBtn.addEventListener("click", function () {
-        chickenShow.style.display = "block";
-        optionModal.style.display = "block";
-      });
-      porkBtn.addEventListener("click", function () {
-        porkShow.style.display = "block";
-        optionModal.style.display = "block";
-      });
-      lambBtn.addEventListener("click", function () {
-        lambShow.style.display = "block";
-        optionModal.style.display = "block";
-      });
-      seafoodBtn.addEventListener("click", function () {
-        seafoodShow.style.display = "block";
-        optionModal.style.display = "block";
-      });
-      optioncloseBtns.forEach(function (optioncloseBtn) {
-        optioncloseBtn.addEventListener("click", function () {
-          beefShow.style.display = "none";
-          chickenShow.style.display = "none";
-          porkShow.style.display = "none";
-          lambShow.style.display = "none";
-          seafoodShow.style.display = "none";
-          optionModal.style.display = "none";
-          console.log(optioncloseBtn);
-        });
-      });
-    </script>
-    <!-- ////////////splide/////////////////////////// -->
-    <script>
-      new Splide(".a1", {
-        type: "loop",
-        padding: {
-          right: "5rem",
-          left: "5rem",
-        },
-      }).mount();
-      new Splide(".b1", {
-        type: "loop",
-        padding: {
-          right: "5rem",
-          left: "5rem",
-        },
-      }).mount();
-    </script>
-    <!-- ////////////////////////手風琴///////////////////// -->
-    <script>
-//       var acc = document.querySelectorAll('.accordion');
-//       var i;
-//       for (i = 0; i < acc.length; i++) {
-//   acc[i].onclick = function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight){
-//       panel.style.maxHeight = null;
-//       console.log(panel);
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     } 
-//   }
-// }
-var acc = document.querySelectorAll('.accordion');
-var mpanel=document.querySelector('.milo');
-      var i;
-      for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-      mpanel.style.display='block';
-      console.log(panel);
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      mpanel.style.display='none';
-    } 
-  }
-}
-var macc = document.querySelectorAll('.maccordion');
-// var mpanel=document.querySelector('.mpanel');
-      var i;
-      for (i = 0; i < acc.length; i++) {
-  macc[i].onclick = function() {
-    this.classList.toggle("active");
-    var ppanel = this.nextElementSibling;
-    if (ppanel.style.maxHeight){
-      ppanel.style.maxHeight = null;
-    } else {
-      ppanel.style.maxHeight = ppanel.scrollHeight + "px";
-    } 
-  }
-}
-    </script>
   </body>
 </html>
